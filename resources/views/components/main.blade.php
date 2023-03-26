@@ -1,4 +1,4 @@
 <x-head/>
 <x-nav/>
-@yield('content')
+    @yield('content')
 <x-footer/>
