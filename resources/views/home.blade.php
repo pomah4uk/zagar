@@ -86,11 +86,12 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-7 order-2 order-lg-1">
-					<form class="contact-form">
-						<input type="text" placeholder="Фамилия">
-						<input type="text" placeholder="Имя">
-						<input type="phone" placeholder="Телефон +7">
-						<input type="text" placeholder="Почта">
+					<form class="contact-form" action="send.php" method="POST">
+						<input type="text" name="firstname" placeholder="Фамилия">
+						<input type="text" name="name" placeholder="Имя">
+						<input type="phone" name="phone" placeholder="Телефон +7">
+						<input type="email" name="email" placeholder="Почта">
+						<input type="date" name="date">
 						<button class="site-btn">Записаться<img src="img/icons/double-arrow.png" alt="#"/></button>
 					</form>
 				</div>
