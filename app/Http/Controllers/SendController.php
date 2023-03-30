@@ -1,4 +1,13 @@
 <?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+class SendController extends Controller
+{
+    public function send(){
+        
 $firstname = $_POST['firstname'];
 $name = $_POST['name'];
 $email = $_POST['email'];
@@ -23,7 +32,6 @@ $email = trim($email);
 $phone = trim($phone);
 $date = trim($date);
 
-mail("pomah4uk@gmail.com", "Заявка с сайта", "Фамилия:".$firstname.". E-mail: ".$email.". Имя".$name.". Телефон".$phone.". Дата".$date ,"From: krasnovairiska@gmail.com \r\n");
 
 if (mail("pomah4uk@gmail.com", "Заявка с сайта", "Фамилия:".$firstname.". E-mail: ".$email.". Имя".$name.". Телефон".$phone.". Дата".$date ,"From: krasnovairiska@gmail.com \r\n"))
  {
@@ -31,4 +39,5 @@ if (mail("pomah4uk@gmail.com", "Заявка с сайта", "Фамилия:".$
 } else {
     echo "при отправке сообщения возникли ошибки";
 }
-?>
+    }
+}

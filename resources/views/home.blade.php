@@ -86,13 +86,13 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-7 order-2 order-lg-1">
-					<form class="contact-form" action="send.php" method="POST">
+					<form class="contact-form" action="" method="POST">
 						<input type="text" name="firstname" placeholder="Фамилия">
 						<input type="text" name="name" placeholder="Имя">
 						<input type="phone" name="phone" placeholder="Телефон +7">
 						<input type="email" name="email" placeholder="Почта">
 						<input type="date" name="date">
-						<button class="site-btn">Записаться<img src="img/icons/double-arrow.png" alt="#"/></button>
+						<button class="site-btn">Отправить заявку<img src="img/icons/double-arrow.png" alt="#"/></button>
 					</form>
 				</div>
 				<div class="col-lg-5 order-1 order-lg-2 contact-text text-white">
