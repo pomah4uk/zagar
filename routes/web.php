@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MainController;
+use App\Http\Controllers\ActionController;
 use Illuminate\Http\Request;
 
 /*
@@ -17,4 +18,4 @@ use Illuminate\Http\Request;
 
 Route::get('/', [MainController::class, 'homePage'])->name('home');
 
-Route::post('/', [SendController::class, 'send'])->name('send');
+Route::post('/action/send', [ActionController::class, 'send'])->name('send');

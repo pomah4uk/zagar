@@ -86,7 +86,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-7 order-2 order-lg-1">
-					<form class="contact-form" action="" method="POST">
+					<form class="contact-form" action="{{ route('send') }}" method="POST">
+						@csrf
 						<input type="text" name="firstname" placeholder="Фамилия">
 						<input type="text" name="name" placeholder="Имя">
 						<input type="phone" name="phone" placeholder="Телефон +7">
